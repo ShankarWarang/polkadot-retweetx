@@ -52,25 +52,23 @@ const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '100vh', // Ensure the container takes the full height of the viewport
+        minHeight: '100vh',
         padding: '20px',
         boxSizing: 'border-box',
       },
       card: {
         textAlign: 'center',
-        backgroundColor: '#fff',
         borderRadius: '8px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         maxWidth: '600px',
         width: '100%',
         padding: '30px',
         boxSizing: 'border-box',
-        margin: '0 auto', // Center the card horizontally
+        margin: '0 auto',
       },
       title: {
         marginBottom: '20px',
         fontSize: '24px',
-        color: '#333',
       },
       textarea: {
         width: '100%',
@@ -80,7 +78,6 @@ const App = () => {
         marginBottom: '10px',
         border: '1px solid #ccc',
         borderRadius: '4px',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
         outline: 'none',
         resize: 'none',
         overflow: 'hidden',
@@ -117,9 +114,9 @@ const App = () => {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <h1 style={styles.title}>Polkadot x ETHIndia 2024</h1>
+          <h1 style ={styles.title}>Polkadot x ETHIndia 2024</h1>
           <div style={styles.stepsContainer}>
-            <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333' }}>How to Participate:</h2>
+            <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>How to Participate:</h2>
             <ol>
               <li style={styles.step}>Step 1: Take a selfie 📸</li>
               <li style={styles.step}>Step 2: Tweet This with your selfie 📸.</li>
