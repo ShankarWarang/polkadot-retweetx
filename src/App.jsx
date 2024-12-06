@@ -38,75 +38,109 @@ const App = () => {
     "🎉 Ready to take your DApp to the next level? Polkadot offers scalability, security, and a vibrant community. Let’s build the future at "
     ];
 
-  const getRandomText = () => {
-    const randomIndex = Math.floor(Math.random() * textArray.length);
-    return textArray[randomIndex];
-  };
-
-  const [randomText, setRandomText] = useState(getRandomText());
-
-  const handleNewText = () => {
-    setRandomText(getRandomText());
-  };
-
-  const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(randomText)}&hashtags=PolkadotAtETHIndia%20%23Polkadot%20`;
-
-  return (
-    <div style={{ 
-        display: 'flex', // Use flexbox for centering
-        justifyContent: 'center', // Center horizontally
-        alignItems: 'center', // Center vertically
-        padding: '40px', 
-        backgroundColor: '#FF2670',  // Ensure it takes full height for centering
-        borderRadius: '8px', 
-      }}>
-      <div style={{ 
-          textAlign: 'center', 
-          backgroundColor: '#fff', // Card background
-          borderRadius: '8px', 
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-          maxWidth: '600px', // Set a max width for the card
-          width: '100%', // Ensure it takes full width of the parent
-          padding: '20px', // Add padding inside the card
-          boxSizing: 'border-box' // Include padding and border in width calculation
-        }}>
-        <h1 style={{ marginBottom: '20px', fontSize: '24px', color: '#333' }}>Polkadot at ETHIndia 2024</h1>
-        <textarea
-          value={randomText}
-          readOnly
-          style={{
-            width: '100%',
-            height: '120px',
-            padding: '15px',
-            fontSize: '12px',
-            marginBottom: '20px',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-            outline: 'none',
-            resize: 'none', // Prevent resizing
-            overflow: 'hidden', // Hide scrollbar
-            lineHeight: '1.5', // Improve readability
-            boxSizing: 'border-box', // Include padding and border in width calculation
-          }}
-          onFocus={(e) => e.target.style.borderColor = '#007bff'}
-          onBlur={(e) => e.target.style.borderColor = '#ccc'}
-        />
-        <div>
-          <button onClick={handleNewText} style={{ padding: '10px 20px', fontSize: '16px', marginRight: '10px', backgroundColor: '#6E7391', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s' }}>
-            Get New tweet!
-          </button>
-          <a href={tweetUrl} target="_blank" rel="noopener noreferrer">
-            <button style={{ padding: '10px 20px', fontSize: '16px', backgroundColor: '#7916F3', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s' }}>
-              Tweet This
-            </button>
-          </a>
+    const getRandomText = () => {
+      const randomIndex = Math.floor(Math.random() * textArray.length);
+      return textArray[randomIndex];
+    };
+  
+    const [randomText, setRandomText] = useState(getRandomText());
+  
+    const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(randomText)}&hashtags=PolkadotAtETHIndia%20%23Polkadot%20`;
+  
+    const styles = {
+      container: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        minHeight: '100vh', // Ensure the container takes the full height of the viewport
+        padding: '20px',
+        boxSizing: 'border-box',
+      },
+      card: {
+        textAlign: 'center',
+        backgroundColor: '#fff',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        maxWidth: '600px',
+        width: '100%',
+        padding: '30px',
+        boxSizing: 'border-box',
+        margin: '0 auto', // Center the card horizontally
+      },
+      title: {
+        marginBottom: '20px',
+        fontSize: '24px',
+        color: '#333',
+      },
+      textarea: {
+        width: '100%',
+        height: '120px',
+        padding: '15px',
+        fontSize: '14px',
+        marginBottom: '10px',
+        border: '1px solid #ccc',
+        borderRadius: '4px',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        outline: 'none',
+        resize: 'none',
+        overflow: 'hidden',
+        lineHeight: '1.5',
+        boxSizing: 'border-box',
+      },
+      button: {
+        padding: '10px 20px',
+        fontSize: '16px',
+        margin: '5px',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s',
+      },
+      tweetButton: {
+        backgroundColor: '#7916F3',
+        color: '#fff',
+        marginBottom: '6px',
+      },
+      stepsContainer: {
+        marginTop: '20px',
+        textAlign: 'left',
+      },
+      step: {
+        marginBottom: '10px',
+      },
+      link: {
+        color: '#007bff',
+        textDecoration: 'underline',
+      },
+    };
+  
+    return (
+      <div style={styles.container}>
+        <div style={styles.card}>
+          <h1 style={styles.title}>Polkadot at ETHIndia 2024</h1>
+          <div style={styles.stepsContainer}>
+            <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333' }}>How to Participate:</h2>
+            <ol>
+              <li style={styles.step}>Step 1: Take a selfie</li>
+              <li style={styles.step}>Step 2: Tweet This with your selfie.</li>
+              <textarea
+                value={randomText}
+                readOnly
+                style={styles.textarea}
+                onFocus={(e) => e.target.style.borderColor = '#007bff'}
+                onBlur={(e) => e.target.style.borderColor = '#ccc'}
+              />
+              <a href={tweetUrl} target="_blank" rel="noopener noreferrer">
+                <button style={{ ...styles.button, ...styles.tweetButton }}>
+                  Tweet This
+                </button>
+              </a>
+              <li style={styles.step}>Step 3: <a href="https://forms.gle/nf26gUxGfz21CsAT7" style={styles.link}>Fill this form</a></li>
+            </ol>
+          </div>
         </div>
       </div>
-    </div>
-  );
-
+    );
+  };
   
-};
-
-export default App;
+  export default App;
