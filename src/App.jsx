@@ -117,12 +117,12 @@ const App = () => {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <h1 style={styles.title}>Polkadot at ETHIndia 2024</h1>
+          <h1 style={styles.title}>Polkadot x ETHIndia 2024</h1>
           <div style={styles.stepsContainer}>
             <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#333' }}>How to Participate:</h2>
             <ol>
-              <li style={styles.step}>Step 1: Take a selfie</li>
-              <li style={styles.step}>Step 2: Tweet This with your selfie.</li>
+              <li style={styles.step}>Step 1: Take a selfie 📸</li>
+              <li style={styles.step}>Step 2: Tweet This with your selfie 📸.</li>
               <textarea
                 value={randomText}
                 readOnly
