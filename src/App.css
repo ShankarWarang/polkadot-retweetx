@@ -30,3 +30,28 @@ body {
     background-color: #6a5acd; /* Adjust button color for dark mode */
   }
 }
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-title {
+  background: linear-gradient(
+    90deg,
+    #FF2670,
+    #E4FF07,
+    #7916F3,
+    #07FFFF,
+    #FF2670,
+    #E4FF07,
+    #7916F3
+  );
+  background-size: 400% 400%;
+  animation: gradient-flow 8s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
