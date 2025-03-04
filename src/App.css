@@ -59,3 +59,18 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
+
+button:hover svg {
+  color: #FF2670;
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.refreshing {
+  animation: spin 0.5s linear;
+}
