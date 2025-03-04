@@ -137,7 +137,7 @@ const App = () => {
     style={styles.link}
   >
     Grab your #IITB Moment here </a>📸</li>
-              <li style={styles.step}>Step 2: Tweet This with your Selected #IITB Moment 📸.</li>
+              <li style={styles.step}>Step 2: Tweet your experience (or use the following pre-generated tweet) with your Selected #IITB Moment 📸.</li>
               <textarea
                 value={randomText}
                 readOnly
