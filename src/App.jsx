@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FiRefreshCw } from "react-icons/fi";
 import polkadotLogo from './assets/polkadot-logo.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
@@ -44,6 +45,18 @@ const App = () => {
     };
   
     const [randomText, setRandomText] = useState(getRandomText());
+    const [isRefreshing, setIsRefreshing] = useState(false);
+
+    const handleRefresh = () => {
+    setIsRefreshing(true);
+    let newText = randomText;
+    while (newText === randomText) {
+      newText = getRandomText();
+    }
+    setRandomText(newText);
+    
+    setTimeout(() => setIsRefreshing(false), 500);
+  };
   
     const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(randomText)}&hashtags=PolkadotAtIITB%20%23Polkadot%20`;
   
@@ -85,6 +98,10 @@ const App = () => {
         lineHeight: '1.5',
         boxSizing: 'border-box',
       },
+      textareaContainer: {
+    position: 'relative',
+    marginBottom: '10px',
+  },
       button: {
         padding: '10px 20px',
         fontSize: '16px',
@@ -114,6 +131,17 @@ const App = () => {
         color: '#007bff',
         textDecoration: 'underline',
       },
+      refreshButton: {
+    position: 'absolute',
+    right: '10px',
+    top: '10px',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    color: '#666',
+    transition: 'transform 0.3s ease',
+    padding: '5px',
+  },
     };
   
     return (
@@ -138,6 +166,7 @@ const App = () => {
   >
     Grab your #IITB Moment here </a>📸</li>
               <li style={styles.step}>Step 2: Tweet your experience (or use the following pre-generated tweet) with your Selected #IITB Moment 📸.</li>
+              <div style={styles.textareaContainer}>
               <textarea
                 value={randomText}
                 readOnly
@@ -145,6 +174,20 @@ const App = () => {
                 onFocus={(e) => e.target.style.borderColor = '#007bff'}
                 onBlur={(e) => e.target.style.borderColor = '#ccc'}
               />
+              <button 
+        onClick={handleRefresh}
+        style={styles.refreshButton}
+        aria-label="Refresh message"
+      >
+        <FiRefreshCw 
+          style={{ 
+            transform: isRefreshing ? 'rotate(360deg)' : 'rotate(0deg)',
+            transition: 'transform 0.5s ease' 
+          }} 
+          size={20}
+        />
+            </button>
+            </div>
               <a href={tweetUrl} target="_blank" rel="noopener noreferrer">
                 <button style={{ ...styles.button, ...styles.tweetButton }}>
                   Tweet This
