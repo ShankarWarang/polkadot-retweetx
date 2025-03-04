@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import reactLogo from './assets/react.svg'
+// import polkadotLogo from './assets/polkadot-logo.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -45,7 +45,7 @@ const App = () => {
   
     const [randomText, setRandomText] = useState(getRandomText());
   
-    const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(randomText)}&hashtags=PolkadotAtETHIndia%20%23Polkadot%20`;
+    const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(randomText)}&hashtags=PolkadotAtIITB%20%23Polkadot%20`;
   
     const styles = {
       container: {
@@ -114,7 +114,14 @@ const App = () => {
     return (
       <div style={styles.container}>
         <div style={styles.card}>
-          <h1 style ={styles.title}>Polkadot x ETHIndia 2024</h1>
+<div style={{ textAlign: 'center', marginBottom: '20px' }}>
+  <img 
+    src={polkadotLogo} 
+    alt="Polkadot Logo" 
+    style={{ maxWidth: '150px', height: 'auto' }}
+  />
+</div>
+    <h1 style ={styles.title}>Polkadot x ETHIndia 2024</h1>
           <div style={styles.stepsContainer}>
             <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>How to Participate:</h2>
             <ol>
