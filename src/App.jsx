@@ -102,6 +102,7 @@ const App = () => {
       stepsContainer: {
         marginTop: '20px',
         textAlign: 'left',
+        border: "4px solid #E4FF07",
       },
       step: {
         marginBottom: '10px',
