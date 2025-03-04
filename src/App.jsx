@@ -95,7 +95,7 @@ const App = () => {
         transition: 'background-color 0.3s',
       },
       tweetButton: {
-        backgroundColor: '#7916F3',
+        backgroundColor: '#FF2670',
         color: '#fff',
         marginBottom: '6px',
       },
