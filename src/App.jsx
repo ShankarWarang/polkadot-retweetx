@@ -67,9 +67,11 @@ const App = () => {
         margin: '0 auto',
       },
       title: {
-        marginBottom: '20px',
-        fontSize: '24px',
-      },
+   marginBottom: "20px",
+   fontSize: "24px",
+   fontWeight: "bold",
+   background: "linear-gradient(90deg, #FF2670, #E4FF07, #7916F3, #07FFFF)",
+},
       textarea: {
         width: '100%',
         height: '120px',
@@ -121,7 +123,7 @@ const App = () => {
     style={{ maxWidth: '150px', height: 'auto' }}
   />
 </div>
-    <h1 style ={styles.title}>Polkadot x ETHIndia 2024</h1>
+    <h1 className='animated-title' style={styles.title}>Polkadot x IIT Bombay 2025</h1>
           <div style={styles.stepsContainer}>
             <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>How to Participate:</h2>
             <ol>
