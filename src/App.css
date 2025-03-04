@@ -31,6 +31,7 @@ body {
   }
 }
 
+/* Add these keyframes and styles */
 @keyframes gradient-flow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -38,6 +39,8 @@ body {
 }
 
 .animated-title {
+  font-size: 24px;
+  font-weight: bold;
   background: linear-gradient(
     90deg,
     #FF2670,
@@ -54,4 +57,5 @@ body {
   background-clip: text;
   color: transparent;
   display: inline-block;
+  margin-bottom: 20px;
 }
