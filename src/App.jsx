@@ -150,7 +150,7 @@ const App = () => {
                   Tweet This
                 </button>
               </a>
-              <li style={styles.step}>Step 3: <a href="https://forms.gle/nf26gUxGfz21CsAT7" style={styles.link}>Fill this form</a></li>
+              <li style={styles.step}>Step 3: <a href="https://forms.gle/4ZjagzCAZxtKcrgH9" style={styles.link}>Fill this form</a></li>
             </ol>
           </div>
         </div>
