@@ -70,7 +70,6 @@ const App = () => {
       marginBottom: "20px",
       fontSize: "24px",
       fontWeight: "bold",
-      background: "linear-gradient(90deg, #FF2670, #E4FF07, #7916F3, #07FFFF)",
     },
       textarea: {
         width: '100%',
