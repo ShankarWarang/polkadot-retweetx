@@ -104,8 +104,8 @@ const App = () => {
         textAlign: 'left',
         border: "2px solid #E4FF07",
         borderRadius: "15px",
-        padding: "30px", 
-        boxSizing: "border-box",
+        padding: "20px", 
+        
       },
       step: {
         marginBottom: '10px',
