@@ -130,7 +130,13 @@ const App = () => {
           <div style={styles.stepsContainer}>
             <h2 style={{ fontSize: '20px', fontWeight: 'bold' }}>How to Participate:</h2>
             <ol>
-              <li style={styles.step}>Step 1: Take a selfie 📸</li>
+              <li style={styles.step}>Step 1: <a 
+    href="https://drive.google.com/drive/folders/1UPYmnFzyXTbNRnPE9MmjyW3c_HEsTrRP" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    style={styles.link}
+  >
+    Grab your #IITB Moment here </a>📸</li>
               <li style={styles.step}>Step 2: Tweet This with your selfie 📸.</li>
               <textarea
                 value={randomText}
