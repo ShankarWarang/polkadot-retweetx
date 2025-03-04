@@ -20,6 +20,9 @@ body {
     background-color: #333; /* Dark textarea background */
     color: #ffffff; /* Light text */
     border: 1px solid #555; /* Darker border */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
   }
 
   .link {
