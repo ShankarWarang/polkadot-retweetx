@@ -102,9 +102,9 @@ const App = () => {
       stepsContainer: {
         marginTop: '20px',
         textAlign: 'left',
-        border: "3px solid #E4FF07",
+        border: "2px solid #E4FF07",
         borderRadius: "15px",
-        padding: "20px", 
+        padding: "30px", 
         boxSizing: "border-box",
       },
       step: {
