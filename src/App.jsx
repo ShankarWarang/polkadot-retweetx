@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import polkadotLogo from './assets/polkadot-logo.svg'
+import polkadotLogo from './assets/polkadot-logo.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 
