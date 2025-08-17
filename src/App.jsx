@@ -196,7 +196,7 @@ const App = () => {
           </h2>
           <ol>
             <li style={styles.step}>
-              Step 1: Take a Selfie / Photo with Polkadot. 📸
+              Step 1: Take a Selfie / Photo during workshops. 📸
             </li>
             <li style={styles.step}>
               Step 2: Tweet your experience (or use the following pre-generated
