@@ -89,7 +89,7 @@ const App = () => {
 
   const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
     randomText
-  )}&hashtags=PolkadotInManipal%20%23PolkadotIndiaWorkshops%20`;
+  )}&hashtags=PolkadotAtNITK%20%23PolkadotIndiaWorkshops%20`;
 
   const styles = {
     container: {
@@ -188,7 +188,7 @@ const App = () => {
           />
         </div>
         <h1 className="animated-title" style={styles.title}>
-          Polkadot x MIT Manipal 2025
+          Polkadot x NITK Surathkal 2025
         </h1>
         <div style={styles.stepsContainer}>
           <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>
@@ -196,11 +196,23 @@ const App = () => {
           </h2>
           <ol>
             <li style={styles.step}>
-              Step 1: Take a Selfie / Photo during workshops. 📸
+              Step 1: Follow{" "}
+              <a
+                href="https://x.com/edgetributors"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.link}
+              >
+                @Edgetributors
+              </a>{" "}
+              X handle 📸
             </li>
             <li style={styles.step}>
-              Step 2: Tweet your experience (or use the following pre-generated
-              tweet) with your Selected #MITM Moment 📸.
+              Step 2: Take a Selfie / Photo during workshops. 📸
+            </li>
+            <li style={styles.step}>
+              Step 3: Tweet your experience (or use the following pre-generated
+              tweet) with your Selected #NITK Moment 📸.
             </li>
             <div style={styles.textareaContainer}>
               <textarea
