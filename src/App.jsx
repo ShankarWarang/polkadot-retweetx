@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiRefreshCw } from "react-icons/fi";
 import polkadotLogo from "./assets/logo.svg";
-// import viteLogo from '/vite.svg'
 import "./App.css";
 
 const App = () => {
@@ -88,119 +87,30 @@ const App = () => {
   };
 
   const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
-    randomText
+    randomText,
   )}&hashtags=PolkadotParty%20%23RoadToSub0%20`;
 
-  const styles = {
-    container: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      minHeight: "100vh",
-      padding: "20px",
-      boxSizing: "border-box",
-    },
-    card: {
-      textAlign: "center",
-      borderRadius: "8px",
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-      maxWidth: "600px",
-      width: "100%",
-      padding: "30px",
-      boxSizing: "border-box",
-      margin: "0 auto",
-    },
-    title: {
-      marginBottom: "20px",
-      fontSize: "24px",
-      fontWeight: "bold",
-    },
-    textarea: {
-      width: "100%",
-      minHeight: "120px",
-      padding: "15px",
-      fontSize: "14px",
-      marginBottom: "10px",
-      border: "1px solid #ccc",
-      borderRadius: "4px",
-      outline: "none",
-      resize: "vertical",
-      overflowY: "auto",
-      lineHeight: "1.5",
-      boxSizing: "border-box",
-      whiteSpace: "pre-wrap",
-    },
-    textareaContainer: {
-      position: "relative",
-      marginBottom: "10px",
-    },
-    button: {
-      padding: "10px 20px",
-      fontSize: "16px",
-      margin: "5px",
-      border: "none",
-      borderRadius: "4px",
-      cursor: "pointer",
-      transition: "background-color 0.3s",
-    },
-    tweetButton: {
-      backgroundColor: "#FF2670",
-      color: "#fff",
-      marginBottom: "6px",
-    },
-    stepsContainer: {
-      marginTop: "20px",
-      textAlign: "left",
-      border: "2px solid #E4FF07",
-      borderRadius: "10px",
-      padding: "30px",
-      boxSizing: "border-box",
-    },
-    step: {
-      marginBottom: "10px",
-    },
-    link: {
-      color: "#007bff",
-      textDecoration: "underline",
-    },
-    refreshButton: {
-      position: "absolute",
-      right: "10px",
-      top: "10px",
-      background: "none",
-      border: "none",
-      cursor: "pointer",
-      color: "#666",
-      transition: "transform 0.3s ease",
-      padding: "5px",
-    },
-  };
-
   return (
-    <div style={styles.container}>
-      <div style={styles.card}>
-        <div style={{ textAlign: "center", marginBottom: "20px" }}>
+    <div className="app-container">
+      <div className="app-card">
+        <div className="logo-container">
           <img
             src={polkadotLogo}
             alt="Polkadot Logo"
-            style={{ maxWidth: "50px", height: "auto" }}
+            className="polkadot-logo"
           />
         </div>
-        <h1 className="animated-title" style={styles.title}>
-          Road to Sub0: India: Chennai Edition
-        </h1>
-        <div style={styles.stepsContainer}>
-          <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>
-            How to Participate:
-          </h2>
-          <ul>
-            <li style={styles.step}>
+        <h1 className="animated-title">Road to Sub0: India: Chennai Edition</h1>
+        <div className="steps-container">
+          <h2 className="steps-title">How to Participate:</h2>
+          <ul className="steps-list">
+            <li className="step-item">
               Step 1: Follow{" "}
               <a
                 href="https://x.com/edgetributors"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={styles.link}
+                className="link"
               >
                 @Edgetributors
               </a>
@@ -209,49 +119,47 @@ const App = () => {
                 href="https://x.com/montaqlabs"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={styles.link}
+                className="link"
               >
                 @MontaQLabs
               </a>{" "}
               X handle
             </li>
-            <li style={styles.step}>
+            <li className="step-item">
               Step 2: Take a Selfie / Photo during the meetup. 📸
             </li>
-            <li style={styles.step}>
+            <li className="step-item">
               Step 3: Tweet your experience (or use the following pre-generated
               tweet) with your Selected #RoadToSub0 Moment 📸.
             </li>
-            <div style={styles.textareaContainer}>
+            <div className="textarea-container">
               <textarea
                 value={randomText}
                 readOnly
-                style={styles.textarea}
-                onFocus={(e) => (e.target.style.borderColor = "#007bff")}
-                onBlur={(e) => (e.target.style.borderColor = "#ccc")}
+                className="tweet-textarea"
               />
               <button
                 onClick={handleRefresh}
-                style={styles.refreshButton}
+                className="refresh-button"
                 aria-label="Refresh message"
               >
                 <FiRefreshCw
-                  style={{
-                    transform: isRefreshing ? "rotate(360deg)" : "rotate(0deg)",
-                    transition: "transform 0.5s ease",
-                  }}
+                  className={`refresh-icon ${isRefreshing ? "rotating" : ""}`}
                   size={20}
                 />
               </button>
             </div>
-            <a href={tweetUrl} target="_blank" rel="noopener noreferrer">
-              <button style={{ ...styles.button, ...styles.tweetButton }}>
-                Tweet This
-              </button>
+            <a
+              href={tweetUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tweet-link"
+            >
+              <button className="tweet-button">Tweet This</button>
             </a>
-            <li style={styles.step}>
-              Step 3:{" "}
-              <a href="https://forms.gle/9wr2RAxxgSsgQyAx6" style={styles.link}>
+            <li className="step-item">
+              Step 4:{" "}
+              <a href="https://forms.gle/9wr2RAxxgSsgQyAx6" className="link">
                 Fill this form
               </a>
             </li>
