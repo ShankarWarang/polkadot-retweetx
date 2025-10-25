@@ -6,66 +6,66 @@ import "./App.css";
 
 const App = () => {
   const textArray = [
-    "My brain is full of parachains, relay chains, and JAM. This #Polkadot workshop was an insane deep dive into Web3. So worth it.",
-    "Just wrote my first ink! smart contract. The tooling is so clean. The future of #Polkadot is bright.",
-    "The session on Polkadot 2.0 was mind-bending. Agile Coretime is a game-changer for blockspace. #Polkadot is years ahead.",
-    "Finally understood what a 'canonical history' means in a fork. The mentors at the #Polkadot workshop are amazing.",
-    "Came for the free food, stayed for the decentralized future. The #Polkadot ecosystem is way bigger than I imagined.",
-    "Okay, so XCM is basically the TCP/IP for blockchains. It just clicked! This #Polkadot workshop was full of 'aha!' moments.",
-    "Exploring Substrate feels like unlocking a new level in my dev journey. Building a custom blockchain with #Polkadot is so powerful.",
-    "The explanation of GRANDPA consensus was epic. Understanding how #Polkadot achieves finality is key. No more guessing.",
-    "My perspective on the ETH scaling trilemma is completely changed after this. #Polkadot has some very smart answers.",
-    "Got a POAP, a sick T-shirt, and a brain full of Substrate knowledge. This #Polkadot India workshop was a 10/10.",
-    "The quiz was so intense! It's amazing how much we learned in two days. Ready to contribute to the #Polkadot ecosystem.",
-    "Learning about hash-linked lists from Raj was a highlight. Understanding the fundamentals makes #Polkadot so much clearer.",
-    "From learning about Merkle trees to deploying a runtime, this workshop covered it all. The #Polkadot community is so welcoming.",
-    "I can't believe how easy it is to spin up a parachain template. The #Polkadot SDK is a beast. Time to start building.",
-    "The session on AssetHub and NFTs was super practical. Finally minted my first NFT on the #Polkadot network!",
-    "Realizing that #Polkadot isn't just one chain but a network of chains is a game-changer. The multichain future is here.",
-    "OpenGov seems so much more advanced than other governance models. Power to the token holders in the #Polkadot ecosystem.",
-    "The mentors here are actual rockstars. They answered every single one of my questions about #Polkadot development.",
-    "Asynchronous backing is such an elegant solution for scaling. The tech behind #Polkadot is seriously impressive.",
-    "PolkaVM is going to be a huge deal for attracting new devs. This #Polkadot workshop was perfectly timed.",
-    "I finally get the difference between a parachain and a solochain. The clarity from this #Polkadot workshop is amazing.",
-    "The history of Web3 session really set the stage for why #Polkadot is so important. Context is everything.",
-    "Who knew cryptography could be this interesting? The deep dive on signatures and encryptions for #Polkadot was great.",
-    "Two days of non-stop learning. My head is spinning, but I'm so excited to start my #Polkadot journey now.",
-    "This workshop was way more hands-on than I expected. We actually built stuff! The #Polkadot ecosystem is for builders.",
-    "Networking with other student devs who are excited about Web3 was a huge plus. The #Polkadot community in India is growing.",
-    "The deep dive into light clients was fascinating. The tech enabling trustless interaction in #Polkadot is next-level.",
-    "Understanding how the mempool works was a missing piece for me. This #Polkadot workshop filled in so many gaps.",
-    "From Bounties to OpenGov, there are so many ways to start contributing to #Polkadot. Feeling super motivated now.",
-    "The explanation of Frontier EVM made so much sense. Connecting #Polkadot to the Ethereum world is massive.",
-    "This JAM T-shirt is my new favorite. What a great way to remember an awesome #Polkadot workshop.",
-    "I used to be confused by all the L1s and L2s. Now I see how #Polkadot offers a different, more integrated solution.",
-    "The session on DeFi was an eye-opener. The potential for financial applications on #Polkadot is limitless.",
-    "Huge thanks to the Edgetributor team for this. The best-run student workshop I've ever been to. #Polkadot is in good hands.",
-    "Learning to use SubKey from the command line made me feel like a real chain developer. #Polkadot tooling is solid.",
-    "The quality of the content was university-level, but way more fun. Every engineering student needs this #Polkadot workshop.",
-    "It's not just about the tech, it's about the game theory. The talk on validator economics in #Polkadot was brilliant.",
-    "The concept of shared security is probably the most underrated feature of #Polkadot. So efficient and powerful.",
-    "My brain is still processing the talk on elastic scaling. The future of #Polkadot is incredibly dynamic.",
-    "Wrote my first line of code in `ink!`. I think I'm in love. Goodbye Solidity, hello #Polkadot.",
-    "The side conversations with the mentors were as valuable as the main sessions. So much knowledge in this #Polkadot community.",
-    "I came here thinking I knew about blockchain. I'm leaving with a new appreciation for the engineering behind #Polkadot.",
-    "It's amazing to see how bridges work to connect different ecosystems. #Polkadot is truly about interoperability.",
-    "The whole workshop felt less like a lecture and more like a conversation. So much engagement. The #Polkadot way!",
-    "I've got a list of bounties I want to check out now. This workshop gave me the confidence to contribute to #Polkadot.",
-    "Realizing you can build a whole app-specific chain instead of just a smart contract is a huge mental shift. Thanks, #Polkadot.",
-    "The hands-on activities were perfectly designed. Challenging but super rewarding. Learned so much about the #Polkadot stack.",
-    "The snacks were great, the people were better. An all-around amazing experience at the #Polkadot India workshop.",
-    "I was on the fence about Web3, but the vision presented for #Polkadot this weekend was incredibly compelling.",
-    "For any dev feeling limited by single-chain platforms, you need to look at what's happening with #Polkadot.",
-    "The 'When to blockchain and why?' session should be mandatory for all CS students. So much clarity from this #Polkadot event.",
-    "Big thanks to the student club partners for making this happen. Bringing #Polkadot to campus was a brilliant move.",
-    "I'm going back to my college and telling everyone they need to learn about #Polkadot. The opportunity is massive.",
-    "The clarity on Relay Chain vs Parachain roles was a huge unlock for me. Finally, it all makes sense. #Polkadot architecture is genius.",
-    "This workshop felt like a bootcamp. I learned more about practical blockchain dev in 2 days than in 2 months of reading. #Polkadot for the win.",
-    "Just claimed my on-chain POAP certificate. Even the certs are decentralized. That's the #Polkadot spirit.",
-    "The progression from Bitcoin's limitations to the solutions #Polkadot provides was laid out so clearly. Amazing curriculum.",
-    "Can't wait to see the after-movie. This whole weekend was a vibe. #Polkadot India knows how to build a community.",
-    "Super hyped about the post-JAM ecosystem. The future of #Polkadot is going to be wild. Glad I got this head start.",
-    "I've officially fallen down the rabbit hole. There's no turning back now. See you on the #Polkadot chain!",
+    "Just experienced the Road to Sub0 Builders Party in Chennai, India today! The Polkadot ecosystem's energy is absolutely incredible here with so many developers. Learning about Elastic Scaling and all the Polkadot 2.0 features 🚀",
+    "At the Road to Sub0: India meetup in Chennai right now and it's amazing! The Polkadot Builders Party is bringing together the most brilliant minds from across the country. This workshop on building parachains using Polkadot SDK 🤯",
+    "Networking at the Road to Sub0 Builders Party Chennai is pure gold for all developers here! India's Polkadot community is thriving with incredible technical talent everywhere. Meeting developers already shipping innovative projects 🔗",
+    "The Road to Sub0: India event in Chennai is exceeding all my expectations today with great content! Learning cross-chain development with XCM at the Polkadot Builders Party. This blockchain technology is truly revolutionary 🌐",
+    "Hands-on technical sessions at Road to Sub0 Chennai are absolutely incredible and practical for everyone! The Polkadot Builders Party India is showing us the future of Web3 development. Developer experience with Polkadot SDK smooth ✨",
+    "Road to Sub0 Builders Party in Chennai, India delivering serious technical knowledge to everyone attending! Polkadot's architecture deep-dive with Agile Coretime explanation was exactly what I needed to understand the platform 💡",
+    "Live at the Road to Sub0: India meetup in Chennai experiencing amazing technical content right now! The Polkadot Builders Party atmosphere is absolutely electric with innovation. Seeing live demos of 6-second block times 🎮",
+    "The Road to Sub0 Builders Party Chennai is genuinely inspiring for all attendees and speakers! India's developer talent pool is massive and hungry to build on Polkadot ecosystem. Learning about shared security benefits today 🙌",
+    "At Road to Sub0: India in Chennai learning so much about the Polkadot ecosystem and its features! Builders Party showcasing real-world projects that matter. Just discovered building with Solidity on Polkadot Hub works great 🔥",
+    "Road to Sub0 Builders Party Chennai delivering top-tier technical content for all developers here! India's Polkadot community is passionate and rapidly growing every day. The $40K hackathon prize pool has me ready to build 💰",
+    "Amazing technical depth at Road to Sub0: India, Chennai meetup happening today with expert speakers! The Polkadot Builders Party speakers are breaking down complex concepts beautifully. Understanding multichain architecture now ⚡",
+    "The Road to Sub0 Builders Party in Chennai is showing India's massive Polkadot potential to everyone! Real-time demos of cross-chain messaging and asset transfers working seamlessly. XCM technology is genuinely game-changing 🌉",
+    "At Road to Sub0: India meetup in Chennai learning about Polkadot Builders Party hackathon tracks today! Three clear tracks whether you're building apps, chains, or experimenting with bleeding edge technology available here 🎯",
+    "Road to Sub0 Builders Party Chennai workshop on smart contracts is genuinely excellent for developers! India's developers getting hands-on experience with Polkadot's Wasm, EVM, and PolkaVM compatibility options available 🔧",
+    "The Road to Sub0: India event in Chennai showcasing the entire Polkadot ecosystem strength perfectly! Builders Party highlighting 600+ projects building worldwide right now. India will be a major contributor to Web3 evolution 📊",
+    "TIL at Road to Sub0: India, Chennai meetup: Polkadot handles multiple cores for elastic scaling beautifully! The Builders Party technical sessions are absolutely game-changing for understanding modern Web3 architecture today 📈",
+    "Road to Sub0 Builders Party in Chennai, India teaching us about the JAM protocol evolution coming! Polkadot's future with Join-Accumulate Machine looks incredibly promising for developers. Can't wait to experiment with this 🌟",
+    "At the Road to Sub0: India meetup in Chennai right now learning cutting-edge blockchain tech! Polkadot Builders Party revealed PolkaVM with RISC-V support and JIT compilation. This will completely transform smart contracts ⚡",
+    "The Road to Sub0 Builders Party Chennai workshop on XCM is absolutely eye-opening today for everyone! India's developer ecosystem desperately needs this level of interoperability. Polkadot delivers exactly what Web3 needs 🌐",
+    "Road to Sub0: India bringing serious blockchain knowledge to Chennai developers at this amazing event! Polkadot Builders Party showing live demos of Moonbeam and Acala integration working seamlessly. Cross-chain DeFi reality 🔥",
+    "Learning so much at Road to Sub0 Builders Party in Chennai about ecosystem growth and development! The Polkadot presence in India is expanding rapidly with amazing community support. Over 600+ projects building worldwide 📊",
+    "Road to Sub0: India event in Chennai teaching Polkadot 2.0 production-ready features to all developers! The Builders Party focus on elastic scaling being live and ready means we can start leveraging this immediately today 💪",
+    "At the Road to Sub0 Builders Party Chennai understanding Polkadot's modular SDK approach in detail! India's developers are perfectly positioned to build the next generation of decentralized applications here on this platform 🎯",
+    "Road to Sub0: India in Chennai revealing MetaMask and Foundry compatibility with Polkadot ecosystem! The Builders Party is systematically removing barriers for developers everywhere. Ethereum migration will be completely seamless 🚀",
+    "The Road to Sub0 Builders Party Chennai speakers are absolutely incredible and knowledgeable experts! Learning about Polkadot's technical architecture and design philosophy in depth. India's Web3 community is ready to build 🧠",
+    "Road to Sub0 Builders Party in Chennai, India demonstrating Polkadot Deployment Portal capabilities! Pre-built templates with EVM support deploy in just minutes. This is removing massive friction from blockchain development 🛠️",
+    "At Road to Sub0: India meetup in Chennai learning about Polkadot's on-chain governance system today! The Builders Party showed runtime upgrades without hard forks. This flexibility is revolutionary for chain evolution and growth ⚙️",
+    "The Road to Sub0 Builders Party Chennai session on parachains is absolutely fascinating for everyone! India's Polkadot ecosystem understanding specialized chains connecting via relay chain with shared security benefits 🔗",
+    "Road to Sub0: India in Chennai revealing Polkadot's Asynchronous Backing performance impact clearly! The Builders Party demonstrated 8-10x throughput increase with 6-second blocks. Production-ready performance boost available ⚡",
+    "Learning at Road to Sub0 Builders Party Chennai about Polkadot's Agile Coretime system innovation! India's developers now have flexible, on-demand computational resource allocation instead of rigid auction systems from before 📊",
+    "Best developer meetup I've attended in India hands down without any question! Road to Sub0 Builders Party Chennai showcased Polkadot's ecosystem brilliantly. Left with head full of ideas and determination to build real apps 🔥",
+    "Incredibly grateful for the Road to Sub0: India community in Chennai today at this amazing event! The Polkadot Builders Party brought together welcoming, brilliant minds. Already registered for the hackathon - let's build together! 🙏",
+    "Road to Sub0 Builders Party in Chennai exceeded all my expectations and then some today! India's Polkadot developer community is genuinely world-class talent pool. The technical workshops were absolutely top-tier quality 📚",
+    "Earned my exclusive POAP at Road to Sub0: India, Chennai today at the meetup! One step closer to Sub0 Buenos Aires on November 14-16. The Polkadot Builders Party journey from Chennai to Argentina will be absolutely epic ✈️",
+    "The Road to Sub0 Builders Party in Chennai showed why Polkadot is India's gateway forward clearly! Connecting with other passionate developers building real projects was today's absolute highlight here at this amazing event 🤝",
+    "Mind completely blown at Road to Sub0: India, Chennai meetup right now with all this knowledge! The Polkadot Builders Party revealed endless possibilities for building interoperable dApps. From zero knowledge to ready-to-build 💡",
+    "Road to Sub0 Builders Party Chennai delivered incredible technical value for all attendees here! India's developer ecosystem is perfectly primed for Polkadot adoption across the country. Today's learnings accelerate my journey 🚀",
+    "Key takeaway from Road to Sub0: India in Chennai today: Build once, connect everywhere is real! The Polkadot Builders Party reinforced this promise perfectly for everyone. The modular SDK approach makes complete sense now 🔗",
+    "Left Road to Sub0 Builders Party Chennai feeling genuinely inspired to start building immediately! Polkadot's comparison to traditional L1 chains was eye-opening. India desperately needs this innovative blockchain technology 💪",
+    "Road to Sub0: India event in Chennai was completely transformative for my understanding of Web3! The Polkadot Builders Party demonstrated that whether new or experienced, there's a clear, well-supported path forward for all 🌟",
+    "The Road to Sub0 Builders Party Chennai convinced me to go all-in on Polkadot ecosystem today! India's growing community combined with world-class technology creates perfect conditions for building impactful applications ✨",
+    "After attending Road to Sub0: India in Chennai today, the Polkadot Builders Party vision is crystal clear to me! From parachains to XCM to JAM protocol - this is the infrastructure platform for Web3's entire next decade 🎯",
+    "Already brainstorming my hackathon project ideas after Road to Sub0 Builders Party Chennai today! India's Polkadot community inspired me with endless possibilities here. The 6-week Builder Party timeline is absolutely perfect 🧠",
+    "Road to Sub0: India in Chennai has me fully committed to building on this platform now! Polkadot Builders Party Track 3 bleeding edge innovations look absolutely wild. Can't wait to experiment with zero-knowledge technology today 🔬",
+    "Road to Sub0 Builders Party in Chennai showed me Polkadot's real-world traction stats today! India's developers building on a platform with 1.3M+ active accounts and $5B+ in value. This ecosystem is genuinely thriving here 💎",
+    "The community energy at Road to Sub0: India, Chennai was absolutely electric today at the event! Polkadot Builders Party brought together India's brightest blockchain minds. This is exactly how you grow a developer ecosystem 🌈",
+    "Road to Sub0 Builders Party Chennai demonstrated practical paths to contributing to Polkadot! India's ecosystem offers grants, comprehensive technical support, infrastructure credits - literally everything builders need 🌟",
+    "Planning my cross-chain application after Road to Sub0 Builders Party in Chennai today! Using multiple Polkadot parachains with XCM messaging is now possible for developers. India's developers will lead this innovation wave 🌊",
+    "The Road to Sub0: India meetup in Chennai introduced Polkadot Deployment Portal templates! Builders Party showed these will save weeks of development and setup time for everyone. Ready to start shipping real projects now 🎯",
+    "Diving deep into Polkadot SDK documentation tonight after Road to Sub0 Chennai event today! India's Builders Party gave me the perfect technical foundation to start. My team is committed to building our first parachain together 📖",
+    "Road to Sub0 Builders Party in Chennai made priorities clear for me today: Prize money is nice, but learning at India's Polkadot events is absolutely priceless. Challenge accepted - I'm building genuinely useful applications now ✨",
+    "After Road to Sub0: India in Chennai, I'm building on Polkadot Cloud services immediately! The Builders Party showed applications that truly impact human lives everywhere. Free infrastructure credits help us build without limits ☁️",
+    "Road to Sub0 Builders Party Chennai revealed extensive Web3 Foundation support availability to all builders! India's Polkadot ecosystem has grants, comprehensive resources, detailed documentation - literally everything needed 🌟",
+    "My biggest takeaway from Road to Sub0: India, Chennai today: Polkadot Builders Party is genuinely serious about developer success today! Technical guidance, security audits, and ecosystem funding available to support Indian builders 💼",
+    "Road to Sub0 Builders Party in Chennai showed real projects like Mythical Games and OriginTrail succeeding! Seeing India's potential role in the Polkadot ecosystem validates everything we're building here together as a community 🎮",
+    "The Polkadot community vibe at Road to Sub0: India, Chennai is completely different from other ecosystems today! Builders Party fostering genuine connections among Indian developers nationwide. It's collaborative, not competitive here 🤝",
+    "Joined the Polkadot Builder Party Telegram group right after Road to Sub0 Chennai experience today! India's local community seamlessly connects with the global ecosystem. The worldwide developer network is incredibly supportive 🌍",
+    "Road to Sub0 Builders Party Chennai proves that local meetups are absolutely crucial for ecosystem growth! India's Polkadot ecosystem growth directly depends on grassroots events like this one. Huge props to all the organizers 👏",
+    "From Chennai to Buenos Aires - what an incredible journey ahead! Road to Sub0: India connecting us to the global Polkadot Builders Party network! Sub0 Symbiosis conference (November 14-16) is definitely locked on my calendar now 🛤️",
+    "After attending Road to Sub0 Builders Party in Chennai today, I'm completely convinced about the future! Web3's future is multichain, and Polkadot is leading this charge. India will become a major hub in this global ecosystem 🚀",
   ];
 
   const getRandomText = () => {
@@ -89,7 +89,7 @@ const App = () => {
 
   const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
     randomText
-  )}&hashtags=PolkadotAtNITK%20%23PolkadotIndiaWorkshops%20`;
+  )}&hashtags=PolkadotParty%20%23RoadToSub0%20`;
 
   const styles = {
     container: {
@@ -116,7 +116,6 @@ const App = () => {
       fontWeight: "bold",
     },
     textarea: {
-      width: "100%",
       width: "100%",
       minHeight: "120px",
       padding: "15px",
@@ -188,13 +187,13 @@ const App = () => {
           />
         </div>
         <h1 className="animated-title" style={styles.title}>
-          Polkadot x NITK Surathkal 2025
+          Road to Sub0: India: Chennai Edition
         </h1>
         <div style={styles.stepsContainer}>
           <h2 style={{ fontSize: "20px", fontWeight: "bold" }}>
             How to Participate:
           </h2>
-          <ol>
+          <ul>
             <li style={styles.step}>
               Step 1: Follow{" "}
               <a
@@ -204,15 +203,24 @@ const App = () => {
                 style={styles.link}
               >
                 @Edgetributors
+              </a>
+              {" & "}
+              <a
+                href="https://x.com/montaqlabs"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.link}
+              >
+                @MontaQLabs
               </a>{" "}
-              X handle 📸
+              X handle
             </li>
             <li style={styles.step}>
-              Step 2: Take a Selfie / Photo during workshops. 📸
+              Step 2: Take a Selfie / Photo during the meetup. 📸
             </li>
             <li style={styles.step}>
               Step 3: Tweet your experience (or use the following pre-generated
-              tweet) with your Selected #NITK Moment 📸.
+              tweet) with your Selected #RoadToSub0 Moment 📸.
             </li>
             <div style={styles.textareaContainer}>
               <textarea
@@ -247,7 +255,7 @@ const App = () => {
                 Fill this form
               </a>
             </li>
-          </ol>
+          </ul>
         </div>
       </div>
     </div>
