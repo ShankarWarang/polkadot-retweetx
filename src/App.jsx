@@ -87,7 +87,7 @@ const App = () => {
   };
 
   const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(
-    randomText,
+    randomText
   )}&hashtags=PolkadotParty%20%23RoadToSub0%20`;
 
   return (
@@ -159,7 +159,7 @@ const App = () => {
             </a>
             <li className="step-item">
               Step 4:{" "}
-              <a href="https://forms.gle/9wr2RAxxgSsgQyAx6" className="link">
+              <a href="https://forms.gle/DDm1eNw8657Qfbew7" className="link">
                 Fill this form
               </a>
             </li>
